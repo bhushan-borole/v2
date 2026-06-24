@@ -293,10 +293,15 @@ a:hover { border-bottom-color: var(--green); }
 .project-link:hover { color: var(--green); transform: translateY(-2px); border: none; }
 
 /* Skills */
-.skill-row { margin: 8px 0; color: var(--light-slate); }
+.skill-row {
+  margin: 8px 0;
+  color: var(--light-slate);
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 8px;
+  align-items: baseline;
+}
 .skill-row strong {
-  display: inline-block;
-  min-width: 110px;
   color: var(--green);
   font-family: var(--mono);
   font-size: 13px;

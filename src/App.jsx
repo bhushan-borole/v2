@@ -200,7 +200,8 @@ export default function App() {
         <Section id="skills" title="Skills">
           {skills.map((s, i) => (
             <p className="skill-row" key={i}>
-              <strong>{s.label}</strong>: {s.items}
+              <strong>{s.label}</strong>
+              <span>{s.items}</span>
             </p>
           ))}
         </Section>
