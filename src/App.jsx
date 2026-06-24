@@ -207,8 +207,20 @@ export default function App() {
         <Section id="projects" title="Projects">
           {projects.map((p, i) => (
             <article className="project" key={i}>
-              {p.eyebrow && <div className="project-eyebrow">{p.eyebrow}</div>}
-              <h3 className="project-title">{p.title}</h3>
+              <div className="project-head">
+                <h3 className="project-title">{p.title}</h3>
+                {p.github && (
+                  <a
+                    href={p.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`${p.title} on GitHub`}
+                    className="project-link"
+                  >
+                    <SocialIcon name="GitHub" />
+                  </a>
+                )}
+              </div>
               {p.description && <p className="project-desc">{p.description}</p>}
               {p.bullets && (
                 <ul className="bullets">
@@ -223,19 +235,6 @@ export default function App() {
                     <li key={t}>{t}</li>
                   ))}
                 </ul>
-              )}
-              {p.github && (
-                <div className="project-links">
-                  <a
-                    href={p.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={`${p.title} on GitHub`}
-                    className="project-link"
-                  >
-                    <SocialIcon name="GitHub" />
-                  </a>
-                </div>
               )}
             </article>
           ))}

@@ -232,16 +232,15 @@ a:hover { border-bottom-color: var(--green); }
 /* Projects */
 .project { margin: 0 0 48px; }
 .project:last-child { margin-bottom: 0; }
-.project-eyebrow {
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--green);
-  letter-spacing: 0.05em;
-  margin-bottom: 10px;
+.project-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 14px;
 }
 .project-title {
-  margin: 0 0 14px;
+  margin: 0;
   font-size: 26px;
   font-weight: 700;
   color: var(--lightest-slate);
@@ -269,17 +268,14 @@ a:hover { border-bottom-color: var(--green); }
   font-size: 12px;
   background: rgba(100, 255, 218, 0.04);
 }
-.project-links {
-  margin-top: 16px;
-  display: flex;
-  gap: 12px;
-}
 .project-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   color: var(--lightest-slate);
   border: none;
+  flex-shrink: 0;
+  margin-top: 6px;
   transition: color 0.15s ease, transform 0.15s ease;
 }
 .project-link:hover { color: var(--green); transform: translateY(-2px); border: none; }
