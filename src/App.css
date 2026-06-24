@@ -407,6 +407,7 @@ a:hover { border-bottom-color: var(--green); }
   .avatar { width: 240px; height: 240px; margin-bottom: 20px; }
   .sidebar .name { font-size: 28px; }
   .contact { text-align: center; }
+  .contact-line { justify-content: center; }
   .nav { display: none; }
   .nav-indicator { display: none; }
   .socials { justify-content: center; margin: 0 0 16px; }
