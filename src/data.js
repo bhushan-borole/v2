@@ -66,25 +66,18 @@ export const experience = [
 
 export const projects = [
   {
-    title: 'Woyse - A Multilingual Entity Recognition System',
+    eyebrow: 'Featured Project',
+    title: 'Nuharc — Smart City Disaster Report App',
+    description:
+      'A realtime, citizen-driven disaster response platform for Dublin that fuses live traffic, emergency dispatch, and dynamic re-routing into one always-on system.',
     bullets: [
-      'Built an end-to-end intent and entity recognition microservice in Django using Rasa NLU Engine.',
-      'Used Python as a main stack, and used Tornado for socket connection.',
+      'Realtime traffic + incident reporting with up to 300 ms latency end-to-end.',
+      'Fuses heterogeneous velocity data streams for ~99.9% accuracy.',
+      'Socket-driven live disaster updates and on-the-fly user re-routing.',
+      'Auto-dispatches emergency services the moment a citizen reports.',
     ],
-  },
-  {
-    title: 'Limitless',
-    bullets: [
-      'App that allows you to share ANY amount of data from one system to another.',
-      'The file is encoded using base64, then it is split into chunks and uploaded to Google Sheets. While downloading the serial order is maintained and it is decoded at client\u2019s end.',
-    ],
-  },
-  {
-    title: 'Text Summarization',
-    bullets: [
-      'It summarizes the given text into number of sentences or words in English and Punjabi.',
-      'Created in Flask and deployed on Google App Engine.',
-    ],
+    stack: ['MongoDB', 'Express', 'React', 'Node.js', 'Docker', 'Azure'],
+    github: 'https://github.com/bhushan-borole/nuharc',
   },
 ]
 

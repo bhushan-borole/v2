@@ -206,16 +206,38 @@ export default function App() {
 
         <Section id="projects" title="Projects">
           {projects.map((p, i) => (
-            <div className="entry" key={i}>
-              <div className="entry-head">
-                <span className="entry-title">{p.title}</span>
-              </div>
-              <ul className="bullets">
-                {p.bullets.map((b, j) => (
-                  <li key={j}>{b}</li>
-                ))}
-              </ul>
-            </div>
+            <article className="project" key={i}>
+              {p.eyebrow && <div className="project-eyebrow">{p.eyebrow}</div>}
+              <h3 className="project-title">{p.title}</h3>
+              {p.description && <p className="project-desc">{p.description}</p>}
+              {p.bullets && (
+                <ul className="bullets">
+                  {p.bullets.map((b, j) => (
+                    <li key={j}>{b}</li>
+                  ))}
+                </ul>
+              )}
+              {p.stack && (
+                <ul className="project-stack">
+                  {p.stack.map((t) => (
+                    <li key={t}>{t}</li>
+                  ))}
+                </ul>
+              )}
+              {p.github && (
+                <div className="project-links">
+                  <a
+                    href={p.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`${p.title} on GitHub`}
+                    className="project-link"
+                  >
+                    <SocialIcon name="GitHub" />
+                  </a>
+                </div>
+              )}
+            </article>
           ))}
         </Section>
 
