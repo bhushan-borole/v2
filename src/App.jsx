@@ -6,7 +6,6 @@ import {
   experience,
   projects,
   skills,
-  oss,
   socials,
 } from './data.js'
 import profileImg from './assets/profile.jpg'
@@ -17,7 +16,6 @@ const NAV = [
   { id: 'about', label: 'About' },
   { id: 'experience', label: 'Experience' },
   { id: 'skills', label: 'Skills' },
-  { id: 'oss', label: 'OSS' },
   { id: 'projects', label: 'Projects' },
   { id: 'education', label: 'Education' },
   { id: 'contact', label: 'Contact' },
@@ -202,32 +200,6 @@ export default function App() {
           {skills.map((s, i) => (
             <p className="skill-row" key={i}>
               <strong>{s.label}</strong>: {s.items}
-            </p>
-          ))}
-        </Section>
-
-        <Section id="oss" title="OSS Contributions">
-          <p className="oss-intro">
-            {oss.intro.map((seg, i) =>
-              seg.href ? (
-                <a key={i} href={seg.href}>
-                  {seg.text}
-                </a>
-              ) : (
-                <span key={i}>{seg.text}</span>
-              ),
-            )}
-          </p>
-          {oss.items.map((item, i) => (
-            <p className="oss-row" key={i}>
-              <strong>{item.org}</strong> <em>{item.repo}</em> [
-              {item.links.map((l, j) => (
-                <span key={j}>
-                  <a href={l.href}>{l.label}</a>
-                  {j < item.links.length - 1 && ', '}
-                </span>
-              ))}
-              ] - {item.detail}
             </p>
           ))}
         </Section>
