@@ -1,8 +1,9 @@
 export const profile = {
   name: 'Bhushan Borole',
   contact: [
-    { label: 'borolebhushan8@gmail.com', href: 'mailto:borolebhushan8@gmail.com' },
-    { label: 'Dublin, Ireland' },
+    { icon: 'briefcase', label: 'Microsoft' },
+    { icon: 'mail', label: 'borolebhushan8@gmail.com', href: 'mailto:borolebhushan8@gmail.com' },
+    { icon: 'pin', label: 'Dublin, Ireland' },
   ],
 }
 

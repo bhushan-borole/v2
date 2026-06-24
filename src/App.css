@@ -85,7 +85,19 @@ a:hover { border-bottom-color: var(--green); }
   color: var(--slate);
   margin-bottom: 36px;
 }
-.contact-line { margin: 3px 0; }
+.contact-line {
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--slate);
+  flex-shrink: 0;
+}
 
 .nav {
   display: flex;

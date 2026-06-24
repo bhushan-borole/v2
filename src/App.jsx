@@ -9,7 +9,7 @@ import {
   socials,
 } from './data.js'
 import profileImg from './assets/profile.jpg'
-import { SocialIcon } from './SocialIcon.jsx'
+import { SocialIcon, ContactIcon } from './SocialIcon.jsx'
 import './App.css'
 
 const NAV = [
@@ -149,6 +149,7 @@ export default function App() {
         <div className="contact">
           {profile.contact.map((c, i) => (
             <div key={i} className="contact-line">
+              {c.icon && <span className="contact-icon"><ContactIcon name={c.icon} /></span>}
               {c.href ? <a href={c.href}>{c.label}</a> : <span>{c.label}</span>}
             </div>
           ))}
