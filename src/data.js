@@ -77,7 +77,22 @@ export const projects = [
       'Auto-dispatches emergency services the moment a citizen reports.',
     ],
     stack: ['MongoDB', 'Express', 'React', 'Node.js', 'Docker', 'Azure'],
-    github: 'https://github.com/bhushan-borole/nuharc',
+    github: 'https://github.com/TCD-ASE-6/Nuharc',
+  },
+  {
+    eyebrow: 'Featured Project',
+    title: 'Woyse — Multilingual Entity Recognition',
+    description:
+      'An end-to-end intent and entity recognition microservice that understands user queries across multiple languages and streams structured insights back in real time over websockets.',
+    stack: ['Python', 'Django', 'Rasa', 'Tornado'],
+  },
+  {
+    eyebrow: 'Featured Project',
+    title: 'Limitless File Sharing',
+    description:
+      'A playful experiment that turns Google Sheets into an unlimited, free file-sharing backplane. Files are base64-encoded, chunked across rows, and reassembled client-side on download.',
+    stack: ['Python', 'Flask', 'Google Sheets API'],
+    github: 'https://github.com/vinay-deshmukh/Limitless-Client',
   },
 ]
 
