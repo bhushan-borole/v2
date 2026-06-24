@@ -45,8 +45,8 @@ export const experience = [
     ],
   },
   {
-    title: 'Research and Development Intern',
-    org: 'Mobisy Technologies',
+    title: 'Mobisy Technologies',
+    org: 'Research and Development Intern',
     date: 'Nov 2020 – Feb 2021',
     bullets: [
       'Collected JSON data by web-scraping from 9-10 websites, using open API end points and storing it in a RDBMS.',
@@ -54,8 +54,8 @@ export const experience = [
     ],
   },
   {
-    title: 'Backend Developer',
-    org: 'Techskills IT Consultants',
+    title: 'Techskills IT Consultants',
+    org: 'Backend Developer',
     date: 'Sept 2019 – Oct 2019',
     bullets: [
       "Developed applications using Spring Framework for Backend Restful API's.",
