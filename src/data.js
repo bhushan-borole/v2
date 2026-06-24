@@ -34,6 +34,17 @@ export const education = [
 
 export const experience = [
   {
+    title: 'Microsoft',
+    org: 'Software Engineer 2',
+    date: 'Sept 2022 – Present',
+    bullets: [
+      'Engineered security automation pipelines to detect threat actor activity across Microsoft Identity services, strengthening anomaly detection, signal correlation, and incident response coverage across upstream and downstream identity services.',
+      'Owned security posture monitoring for ~200 TCB (Trusted Computing Base) services, driving compliance readiness, control attestation, and operational accountability across the identity trust boundary.',
+      'Led privacy engineering across IDNA by identifying EUDB (EU Data Boundary) and GDPR compliance gaps, raising data residency and data subject rights violations, and partnering with service owners to remediate non-compliant data flows.',
+      'Operate high-throughput GetChanges-based delta replication with low-latency end-to-end propagation, leveraging watermark/cookie-based change tracking, partition-aware fan-out, and a highly available ring topology to keep identity data consistent, fresh, and authoritative across distributed systems.',
+    ],
+  },
+  {
     title: 'Research and Development Intern',
     org: 'Mobisy Technologies',
     date: 'Nov 2020 – Feb 2021',
