@@ -98,10 +98,12 @@ export const projects = [
 ]
 
 export const skills = [
-  { label: 'Web', items: 'ReactJS, Python-Flask, JavaScript, CSS, HTML' },
-  { label: 'Database', items: 'SQL Server, MySQL, Sqlite3' },
-  { label: 'Languages', items: 'Python, Java, C++, C, PHP, JavaScript' },
-  { label: 'Tools', items: 'Git, Vim, VS Code, IntelliJ IDEA, Android Development with Java' },
+  { label: 'Languages', items: 'C#, Python, JavaScript, TypeScript, SQL, PowerShell' },
+  { label: 'Distributed', items: '.NET, gRPC, REST, Service Fabric, Event-driven systems, Delta replication' },
+  { label: 'Cloud & Data', items: 'Azure, Kusto, Cosmos DB, SQL Server, Redis' },
+  { label: 'Security', items: 'Threat detection, Anomaly detection, GDPR / EUDB compliance, Identity & access' },
+  { label: 'Web', items: 'React, Node.js, Express, Flask' },
+  { label: 'Tools', items: 'Git, Docker, VS Code, Geneva, IcM' },
 ]
 
 export const oss = {
